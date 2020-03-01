@@ -2,6 +2,6 @@
 {
     public interface ICreateFile
     {
-
+       string CreateFile(string TypeFile);
     }
 }

@@ -8,10 +8,10 @@ namespace FileManager.DataAccess.Data
 {
    public interface IFileFactory
     {
-        ICreateFile GetCreateFile();
-        IReadFile GetReadFile();
-        IUpdateFile GetUpdateFile();
-        IDeleteFile GetDeleteFile();
+        ICreateFile CreateFile();
+        IReadFile ReadFile();
+        IUpdateFile UpdateFile();
+        IDeleteFile DeleteFile();
        
     }
 }

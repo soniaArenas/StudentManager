@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FileManager.DataAccess.Data.Product
 {
-    class UpdateJson
+    class UpdateJson:JsonFactory
     {
     }
 }

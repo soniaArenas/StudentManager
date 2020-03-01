@@ -24,12 +24,13 @@ namespace FileManager.Presentation.WinSite
         {
 
             var TypeOfFile = CmbFiles.SelectedItem;
-            FactoryProvider ifile = IFileFactory.GetFactory(TypeOfFile.ToString(),"StudentPerson");
-            Dictionary<int, Student> students = ifile.Read();
-            var id = NumOfStudents.Count + 1;
-            Student student = new Student(id, txtBoxName.Text, txtBoxName.Text, txtBoxAge.Text);
-            NumOfStudents.Add(student);
             
+            var id = students.Count + 1;
+            Student student = new Student(id, txtBoxName.Text, txtBoxName.Text, txtBoxAge.Text);
+            students.Add(students.Count +1,student);
+            IFileFactory File = new JsonFactory();
+            FactoryProvider JsonCreate = FactoryProvider.GetFactory(File);
+
 
         }
 

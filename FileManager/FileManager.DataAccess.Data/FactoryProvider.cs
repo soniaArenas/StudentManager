@@ -10,27 +10,24 @@ namespace FileManager.DataAccess.Data
     public static class FactoryProvider
     {
 
-        public static IFileFactory GetFactory(string TypeFile, string TypePerson)
+        public static IFileFactory GetFactory(string TypeFile)
         {
            
-
                 switch (TypeFile)
                 {
-                    case ".Text":
-                        return new TxtFile();
+                    case ".text":
+                        return new TxtFactory();
                         break;
-                    case ".Json":
-                        return new JsonFile();
+                    case ".json":
+                        return new JsonFactory();
                         break;
 
-                    case ".Xml":
-                        return new XmlFile();
+                    case ".xml":
+                        return new XmlFactory();
                         break;
                 }
 
                 return null;
-            
-            throw new NotSupportedException();
         }
     }
 }
