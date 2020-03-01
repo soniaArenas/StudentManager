@@ -8,22 +8,22 @@ namespace FileManager.DataAccess.Data
 {
     class TxtFactory : IFileFactory
     {
-        public ICreateFile CreateFile()
+        public ICreateFile CreateFile(string TypeFile)
         {
             throw new NotImplementedException();
         }
 
-        public IDeleteFile DeleteFile()
+        public IDeleteFile DeleteFile(string TypeFile)
         {
             throw new NotImplementedException();
         }
 
-        public IReadFile ReadFile()
+        public IReadFile ReadFile(string TypeFile)
         {
             throw new NotImplementedException();
         }
 
-        public IUpdateFile UpdateFile()
+        public IUpdateFile UpdateFile(string TypeFile)
         {
             throw new NotImplementedException();
         }

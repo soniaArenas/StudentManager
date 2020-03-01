@@ -2,5 +2,6 @@
 {
     public interface IUpdateFile
     {
+        string UpdateFile(string TypeFile);
     }
 }

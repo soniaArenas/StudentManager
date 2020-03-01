@@ -2,5 +2,6 @@
 {
     public interface IReadFile
     {
+        string ReadFile(string TypeFile);
     }
 }

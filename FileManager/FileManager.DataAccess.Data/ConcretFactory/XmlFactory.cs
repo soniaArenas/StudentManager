@@ -6,28 +6,26 @@ using System.Threading.Tasks;
 
 namespace FileManager.DataAccess.Data
 {
-    class XmlFactory:IFileFactory
+    class XmlFactory : IFileFactory
     {
-        public ICreateFile CreateFile()
+        public ICreateFile CreateFile(string TypeFile)
         {
             throw new NotImplementedException();
         }
 
-        public IReadFile ReadFile()
+        public IDeleteFile DeleteFile(string TypeFile)
         {
             throw new NotImplementedException();
         }
 
-        public IUpdateFile UpdateFile()
+        public IReadFile ReadFile(string TypeFile)
         {
             throw new NotImplementedException();
         }
 
-        public IDeleteFile DeleteFile()
+        public IUpdateFile UpdateFile(string TypeFile)
         {
             throw new NotImplementedException();
         }
-
-       
     }
 }

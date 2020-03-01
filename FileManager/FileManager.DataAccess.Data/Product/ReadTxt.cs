@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FileManager.DataAccess.Data.Product
 {
-    class ReadTxt:TxtFactory
+    class ReadTxt : IReadFile
     {
+        public string ReadFile(string TypeFile)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

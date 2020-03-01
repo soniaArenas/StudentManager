@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace FileManager.DataAccess.Data.Product
 {
-    class CreateXml:XmlFactory
+    class CreateXml: ICreateFile
     {
+        public string CreateFile(string TypeFile)
+        {
+          
+            return "He creado";
+        }
     }
 }

@@ -2,5 +2,6 @@
 {
     public interface IDeleteFile
     {
+        string DeleteFile(string TypeFile);
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FileManager.DataAccess.Data.Product
 {
-    class UpdateTxt:TxtFactory
+    class UpdateTxt : IUpdateFile
     {
+        public string UpdateFile(string TypeFile)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

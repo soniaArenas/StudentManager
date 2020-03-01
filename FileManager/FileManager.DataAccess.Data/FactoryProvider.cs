@@ -7,7 +7,7 @@ using FileManager.Common.Layer;
 
 namespace FileManager.DataAccess.Data
 {
-    public static class FactoryProvider
+    public class FactoryProvider
     {
 
         public static IFileFactory GetFactory(string TypeFile)

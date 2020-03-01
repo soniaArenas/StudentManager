@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FileManager.DataAccess.Data.Product
 {
-    class ReadJson:JsonFactory
+    class ReadJson : IReadFile
     {
+        public string ReadFile(string TypeFile)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

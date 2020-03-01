@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FileManager.DataAccess.Data.Product
 {
-    class DeleteTxt:TxtFactory
+    class DeleteTxt : IDeleteFile
     {
+        public string DeleteFile(string TypeFile)
+        {
+            return "Borrado";
+        }
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FileManager.DataAccess.Data.Product
 {
-    class DeleteJson:JsonFactory
+    class DeleteJson : IDeleteFile
     {
+        public string DeleteFile(string TypeFile)
+        {
+            return "Borrado";
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace FileManager.Presentation.WinSite
 {
     public partial class frmStudent : Form
     {
-        Dictionary<int, Student> students = new Dictionary<int, Student>();
+       public static Dictionary<int, Student> students = new Dictionary<int, Student>();
         public frmStudent()
         {
             InitializeComponent();
@@ -23,14 +23,13 @@ namespace FileManager.Presentation.WinSite
         private void btnSave_Click(object sender, EventArgs e)
         {
 
-            var TypeOfFile = CmbFiles.SelectedItem;
-            
+            var TypeOfFile = CmbFiles.SelectedItem.ToString();
             var id = students.Count + 1;
-            Student student = new Student(id, txtBoxName.Text, txtBoxName.Text, txtBoxAge.Text);
+            Student student = new Student(id, txtBoxName.Text, txtBoxSurname.Text, txtBoxAge.Text);
             students.Add(students.Count +1,student);
-            IFileFactory File = new JsonFactory();
-            FactoryProvider JsonCreate = FactoryProvider.GetFactory(File);
-
+            IFileFactory FileCreate = FactoryProvider.GetFactory(TypeOfFile);
+           var Return= FileCreate.CreateFile(TypeOfFile);
+            MessageBox.Show("Insertado correctamente: "+"ID: "+id+"Name: "+txtBoxName.Text+ "Surname "+ txtBoxSurname.Text+"Edad: "+txtBoxAge.Text);
 
         }
 
