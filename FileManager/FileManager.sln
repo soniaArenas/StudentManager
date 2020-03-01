@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager.Presentation.WinSite", "FileManager.Presentation.WinSite\FileManager.Presentation.WinSite.csproj", "{C7265B66-C11C-4A77-85AB-EB74A1F07C88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager.DataAccess.Data", "FileManager.DataAccess.Data\FileManager.DataAccess.Data.csproj", "{B8BF9242-793D-459F-985A-A0833E37BF30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Tier", "Presentation Tier", "{CBF6E93E-C732-4D54-AFFF-831F829D6216}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess Tier", "DataAccess Tier", "{145353C1-3F5C-4C0E-B891-ACEBE3FCE49D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager.Common.Layer", "FileManager.Common.Layer\FileManager.Common.Layer.csproj", "{DBE962F2-4170-4385-82F8-2F9B77284789}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common Tier", "Common Tier", "{6CE7ADF8-DC84-4782-B6DC-D947BF86747F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager.DataAccess.DataTests", "FileManager.DataAccess.DataTests\FileManager.DataAccess.DataTests.csproj", "{686F6B07-4C95-4FDF-96A2-563B8E0B55E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess Integration Tests", "DataAccess Integration Tests", "{DB226059-30F3-4557-B7ED-4D682BD56C47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7265B66-C11C-4A77-85AB-EB74A1F07C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7265B66-C11C-4A77-85AB-EB74A1F07C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7265B66-C11C-4A77-85AB-EB74A1F07C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7265B66-C11C-4A77-85AB-EB74A1F07C88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8BF9242-793D-459F-985A-A0833E37BF30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8BF9242-793D-459F-985A-A0833E37BF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8BF9242-793D-459F-985A-A0833E37BF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8BF9242-793D-459F-985A-A0833E37BF30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE962F2-4170-4385-82F8-2F9B77284789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE962F2-4170-4385-82F8-2F9B77284789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE962F2-4170-4385-82F8-2F9B77284789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE962F2-4170-4385-82F8-2F9B77284789}.Release|Any CPU.Build.0 = Release|Any CPU
+		{686F6B07-4C95-4FDF-96A2-563B8E0B55E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{686F6B07-4C95-4FDF-96A2-563B8E0B55E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{686F6B07-4C95-4FDF-96A2-563B8E0B55E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{686F6B07-4C95-4FDF-96A2-563B8E0B55E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7265B66-C11C-4A77-85AB-EB74A1F07C88} = {CBF6E93E-C732-4D54-AFFF-831F829D6216}
+		{B8BF9242-793D-459F-985A-A0833E37BF30} = {145353C1-3F5C-4C0E-B891-ACEBE3FCE49D}
+		{DBE962F2-4170-4385-82F8-2F9B77284789} = {6CE7ADF8-DC84-4782-B6DC-D947BF86747F}
+		{686F6B07-4C95-4FDF-96A2-563B8E0B55E7} = {DB226059-30F3-4557-B7ED-4D682BD56C47}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBCA1A1C-A0C8-44D5-A72B-01613D7560B0}
+	EndGlobalSection
+EndGlobal
