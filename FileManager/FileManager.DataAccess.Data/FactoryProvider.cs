@@ -4,30 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FileManager.Common.Layer;
+using FileManager.DataAccess.Data.AbstractFactory;
+using FileManager.DataAccess.Data.ConcretFactory;
 
 namespace FileManager.DataAccess.Data
 {
-    public class FactoryProvider
+    public static class FactoryProvider
     {
 
-        public static IFileFactory GetFactory(string TypeFile)
+        public static IAbstractFactory GetFactory(string TypeFile)
         {
-           
-                switch (TypeFile)
-                {
-                    case ".text":
-                        return new TxtFactory();
-                        break;
-                    case ".json":
-                        return new JsonFactory();
-                        break;
-
-                    case ".xml":
-                        return new XmlFactory();
-                        break;
-                }
-
-                return null;
+            return new FileFactory();
+            
         }
     }
 }

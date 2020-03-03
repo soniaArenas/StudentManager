@@ -53,7 +53,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(453, 124);
+            this.btnSave.Location = new System.Drawing.Point(427, 156);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(108, 43);
             this.btnSave.TabIndex = 1;
@@ -118,7 +118,7 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Tipo de archivo";
             // 
-            // frmStudent
+            // frmStudient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +132,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.CmbFiles);
-            this.Name = "frmStudent";
+            this.Name = "frmStudient";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -54,28 +54,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractFactory\IFileFactory.cs" />
-    <Compile Include="AbstractProduct\ICreateFile.cs" />
-    <Compile Include="AbstractProduct\IDeleteFile.cs" />
-    <Compile Include="AbstractProduct\IReadFile.cs" />
-    <Compile Include="AbstractProduct\IUpdateFile.cs" />
-    <Compile Include="ConcretFactory\JsonFactory.cs" />
-    <Compile Include="Product\CreateJson.cs" />
-    <Compile Include="Product\CreateTxt.cs" />
-    <Compile Include="Product\CreateXml.cs" />
-    <Compile Include="Product\DeleteJson.cs" />
-    <Compile Include="Product\DeleteTxt.cs" />
-    <Compile Include="Product\DeleteXml.cs" />
-    <Compile Include="Product\ReadJson.cs" />
-    <Compile Include="Product\ReadTxt.cs" />
-    <Compile Include="Product\ReadXml.cs" />
-    <Compile Include="Product\UpdateJson.cs" />
-    <Compile Include="Product\UpdateTxt.cs" />
-    <Compile Include="Product\UpdateXml.cs" />
+    <Compile Include="AbstractFactory\IAbstractFactory.cs" />
+    <Compile Include="AbstractProduct\IFile.cs" />
+    <Compile Include="ConcretFactory\FileFactory.cs" />
+    <Compile Include="Product\Json.cs" />
+    <Compile Include="Product\Txt.cs" />
+    <Compile Include="Product\Xml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FactoryProvider.cs" />
-    <Compile Include="ConcretFactory\TxtFactory.cs" />
-    <Compile Include="ConcretFactory\XmlFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FileManager.Common.Layer\FileManager.Common.Layer.csproj">
