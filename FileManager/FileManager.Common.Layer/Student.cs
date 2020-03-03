@@ -12,7 +12,8 @@ namespace FileManager.Common.Layer
         public string StudentName { get; set; }
         public string StudentSurname { get; set; }
         public string studentAge { get; set; }
-        
+       
+
         public Student (int Id,string name, string surname, string age)
         {
             StudentId = Id;
